@@ -1,0 +1,28 @@
+{
+  "name": "agentic-ui",
+  "version": "0.1.0",
+  "description": "Put agents inside your app: a chat rail on every page, workers in the background, decision cards, and actions that only run after a human signs them off.",
+  "license": "MIT",
+  "author": "Max Whitehead",
+  "main": "server.js",
+  "scripts": {
+    "start": "./start.sh",
+    "build": "esbuild ui/chat.jsx --bundle --minify --format=iife --target=es2020 --define:process.env.NODE_ENV=\\\"production\\\" --outfile=public/chat.bundle.js",
+    "test": "node test/gate.test.js && node test/policy.test.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "dompurify": "^3.4.17",
+    "express": "^5.3.0",
+    "marked": "^18.2.0"
+  },
+  "devDependencies": {
+    "@ai-sdk/react": "^3.0.334",
+    "ai": "^6.0.331",
+    "esbuild": "^0.28.2",
+    "modern-screenshot": "^4.7.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
