@@ -23,7 +23,7 @@ Agents run through the [Claude Code](https://docs.claude.com/en/docs/claude-code
 You need Node 20+ and Claude Code installed and logged in (`claude` works in your terminal).
 
 ```bash
-git clone https://github.com/<you>/agentic-ui.git
+git clone https://github.com/Maxwh21/agentic-ui.git
 cd agentic-ui
 ./start.sh            # installs, builds the rail, starts the app
 ```
