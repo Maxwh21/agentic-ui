@@ -35,6 +35,8 @@ Open http://127.0.0.1:4477. The example is a tiny **notes desk**:
 3. The note appears as a card in the chat and on the home page. Press **Approve**.
 4. At its time slot the app starts the **publisher**, whose one call to the notes service passes the gate only if it matches what you approved. The note is written to `data/published-notes.jsonl` (or POSTed to `NOTES_WEBHOOK_URL` if you set one).
 
+For a bigger real-world example, see [examples/customer-discovery.md](examples/customer-discovery.md): the customer-discovery pipeline this project grew out of.
+
 Flip **Demo** in the top bar to try it with mock services and separate data. `npm test` runs the gate and policy checks.
 
 ## Core ideas
